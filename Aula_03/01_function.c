@@ -16,3 +16,5 @@ int main(void)
     printf("O seu antecessor é: %d \n", var1);
     return 0 ;
 }
+//gcc 02_distancia.c -o a.out -lm
+//./a.out
