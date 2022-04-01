@@ -16,7 +16,12 @@ int main(void)
     printf("Digite o valor da altura do retângulo: ");
     scanf("%d", &altura);
 
+    if (base>=0 && altura>=0)
+    {
     printf("O valor da área desse retângulo é: %d \n", Calculo(base,altura));
-   
+    }
+    else {
+        printf("Digite um valor positivo! \n");
+    }
     return 0;
 }
