@@ -26,3 +26,4 @@ printf("A distância entre o ponto 1 até o ponto 2 é: %f \n ", CalculoPontos(x
 
 return 0;
 }
+//aaaa
