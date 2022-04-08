@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include <tome.h>
+#include <time.h>
 
 bool ePar (int x){
     bool retorno = false;
@@ -23,7 +23,7 @@ int main (){
     printf("Escolha um número:");
     scanf("%d", &maoJogador);
     printf("\n O computador escolheu o número!");
-    printf("Jogador escolha: \n [1] --> Par \n [2] -->");   
+    printf("Jogador escolha: \n [1] --> Par \n [2] --> Ímpar \n");   
     scanf("%d", &jogadorEscolhe);
     if(jogadorEscolhe ==1){
         par=true;
@@ -31,12 +31,12 @@ int main (){
     else{
         par= false;
     }
-printf("\n\n Mão Computador %d, Mão Jogador %d, Total = %d", maoComputador,maoJogador,maoComputador+maoJogador);
-if ((ePar(maoComputador+maoJogador)&& par)|| (!ePar(maoComputador+maoJogador)!par)){
-    printf("\nJOGADOR GANHOU!");
+printf("\n\nMão Computador %d, Mão Jogador %d, Total = %d", maoComputador,maoJogador,maoComputador+maoJogador);
+if ((ePar(maoComputador+maoJogador)&& par)|| (!ePar(maoComputador+maoJogador) &&!par)){
+    printf("\nJOGADOR GANHOU!\n");
 }
 else{
-    printf("\nJOGADOR PERDEU!");
+    printf("\nJOGADOR PERDEU! \n");
 }
 return 0;
 }
