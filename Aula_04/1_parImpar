@@ -40,3 +40,5 @@ else{
 }
 return 0;
 }
+//gcc 01_parImpar.c -o a.out -lm
+//./a.out
