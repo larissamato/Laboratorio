@@ -11,12 +11,13 @@ scanf("%f", &salario);
 printf("Agora digite o valor do empréstimo: ");
 scanf("%f", &emprestimo);
 printf("Por fim, digite em quantas parcelas será pago: ");
-scanf("%f", &parcelas);
+scanf("%f", &parcela);
+emprestimo=emprestimo/parcela;
 salario=salario*0.30;
 if(emprestimo<=salario){
     printf("Seu empréstimo foi aprovado! \n");
 }else
-printf("Sinto muito, mas seu empréstimo não foi aprovado. O valor desejado ultrapassa trinta por cento do seu salário \n");
+printf("Sinto muito, mas seu empréstimo não foi aprovado. O valor da parcela ultrapassa trinta por cento do seu salário \n");
 return 0;
 
 }

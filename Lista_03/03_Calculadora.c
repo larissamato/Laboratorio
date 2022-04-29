@@ -1,3 +1,4 @@
+//Lista 3.3 - Calculadora                       
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -16,7 +17,7 @@ int main (){
             number1=number1*number2;
             printf("Resultado: %f\n", number1);
     }else 
-        if (operacao==2){
+        if (operacao==2 && number2!=0){
             number1=number1/number2;
             printf("Resultado: %f\n", number1);
     }else 
