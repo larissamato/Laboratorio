@@ -1,3 +1,4 @@
+//Lista 2.5 - fábrica de camisetas
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

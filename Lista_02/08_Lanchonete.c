@@ -1,3 +1,4 @@
+//Lista 2.8 - Conta lanchonete 
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

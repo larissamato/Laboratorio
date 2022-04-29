@@ -1,3 +1,4 @@
+//Lista 2.7 - Troco restaurante
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

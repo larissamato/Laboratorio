@@ -1,3 +1,4 @@
+//Lista 2.3 - conversão de tempo
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

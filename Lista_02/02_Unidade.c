@@ -1,3 +1,4 @@
+//Lista 2.2 - centena, unidade e dezena
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

@@ -1,3 +1,4 @@
+//Lista 2.4 - Equação Linear
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

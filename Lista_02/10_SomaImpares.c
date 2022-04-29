@@ -1,3 +1,4 @@
+//Lista 2.10 - Soma dos números ímpares
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
