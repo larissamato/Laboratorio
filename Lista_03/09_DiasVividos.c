@@ -42,7 +42,7 @@ int Bissexto(int ano)
     if( ano%4 ==0)
     return 1
     
-    retorne 0
+    return 0
 }
         funcao inteiro diasPrimeiroMes(inteiro mes, inteiro dias)
         {
