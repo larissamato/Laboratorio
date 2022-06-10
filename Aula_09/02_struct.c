@@ -25,6 +25,9 @@ int main (){
    P2=Povo[4];
    P2.Idade++;
 
+
+   scanf("%d", &Povo[4].Idade);
+
    ImprimePessoa(Joao);
    return 0; 
 }
