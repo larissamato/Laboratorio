@@ -10,7 +10,7 @@ int main ()
     for (count=0;count<5;count++)
     {
         printf ("\n\nDigite uma string: ");
-        gets (strings[count]);
+        gets(strings[count]);
         //Alexandre Bellezi jose
         //char = 32
         //if(strings[0][9] == 67);
