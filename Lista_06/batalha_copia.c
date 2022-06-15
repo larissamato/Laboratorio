@@ -55,7 +55,7 @@ void gerar(){
 
 void print_matriz(){
     system("clear");
-    printf("\n\t---------------BATALHA NAVAL------------\n\n:%d\n\n\n",placar);
+    printf("\n\t---------------BATALHA NAVAL------------\n\ntentativas:%d\n\n\n",placar);
     for (x=-1;x<11;x++){
         for (y=0;y<22;y++){
             printf("%c", matriz[x][y]);
@@ -66,39 +66,40 @@ void print_matriz(){
 }
 
 void sorteio(){
-int naviox[9];
-int navioy[9];
+int navio[9][9];
 int count = 1,x=0,y=0;
 
     for (int i=0; i<9; i++){
-        naviox[i]= rand() % 9;
-        naviox[i]=naviox[i];
+            for (int j=0; j<9; j++){
+            navio[i][j]= rand() % 9;
+        }
     }
+    
 
     for (int i=0; i<9; i++){
-        navioy[i]= rand() % 9;
-        navioy[i]=navioy[i];
-    }
-
-    /*for (int i=0; i<9; i++){
-        printf("x:%d\n", naviox[i]);
-        printf("y:%d\n", navioy[i]);
-    }*/
-    for(placar=1;placar>=0;placar--){
+        for (int j=0; j<9; j++){
+            printf(" %d", navio[i][j]);
+        }
+        printf("\n");
+    }   
+    
+    /*for(placar=1;placar>=0;placar--){
         //printf("\nnaviox:%d\nnavioy:%d\n",naviox[0],navioy[0]);
         printf("\nDigite o valor de x e y do tabuleiro: ");
         scanf("%d %d", &x, &y);
+
         for (int i=0; i<10; i++){
+                for (int i=0; i<10; i++){
                 if (x == naviox[i] && y == navioy[i]){
                 printf("naviox: %d navioy: %d\nescolha: x->%d y->%d\n", naviox[i],navioy[i], x, y);
                 x=x+1;
                 y=y*2+2;
-                matriz[x][y]='o';
+                matriz[x][y]='x';
                 }
-                
+            }  
         }
         print_matriz();
-    }
+    }*/
 }
 
 int main ()
