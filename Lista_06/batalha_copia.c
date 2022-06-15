@@ -66,22 +66,87 @@ void print_matriz(){
 }
 
 void sorteio(){
-int navio[9][9];
-int count = 1,x=0,y=0;
+    int navio1Posicoes[5];
+    int navio2Posicoes[2];
+    int navio4Posicoes[4];
+    int navio3Posicoes[2][3];
+    int count = 1,x=0,y=0;
+    x= rand() % 9;
+    y= rand() % 9;
 
-    for (int i=0; i<9; i++){
-            for (int j=0; j<9; j++){
-            navio[i][j]= rand() % 9;
+    char matriz[10][10];
+    for(int i = 0; i<10;i++){
+        for(int j=0; j<0; j++){
+            if(x==i && j==y){
+            matriz[i][j]='W';
+            }
         }
     }
+
+    for(int i=0; i<10; i++){
+        for(int j=0; j<10; j++){
+            printf("\t%d", matriz[i][j]);
+        }
+        printf("\n");
+    }
+
+
+/*
+    //5 NAVIO 1 POSIÇÕES 
+    navio1Posicoes[0]= rand() % 9;
+    for(int i=0; i<5; i++){
+        navio1Posicoes[i]=navio1Posicoes[0]+i;
+    }
+    for(int i=0; i<2; i++){
+        printf("\t%d", navio2Posicoes[i]);
+    }
+    printf("\n\n\n");
+    //1 NAVIO 2 POSIÇÕES 
+    navio2Posicoes[0]= rand() % 9;
+    for(int i=1; i<2; i++){
+        navio2Posicoes[i]=navio2Posicoes[0]+i;
+    }
+    for(int i=0; i<2; i++){
+        printf("\t%d", navio2Posicoes[i]);
+    }
+    printf("\n\n\n");
+
+    //1 NAVIO QUATRO POSIÇÕES
+    navio4Posicoes[0]= rand() % 9;
+    for(int i=0; i<4; i++){
+        navio4Posicoes[i]=navio4Posicoes[0]+i;
+    }
+    for(int i=0; i<4; i++){
+        printf("\t%d", navio4Posicoes[i]);
+    }
+    printf("\n\n\n");
+
+    //2 NAVIOS TRÊS POSIÇÕES
+    navio3Posicoes[0][0]= rand() % 9;
+    navio3Posicoes[1][0]= rand() % 9;
+    for(int i=0; i<2; i++){
+        for(int j=1;j<3;j++){
+            navio3Posicoes[i][j]=navio3Posicoes[i][0]+j;
+        }
+    }
+    for(int i=0; i<2; i++){
+        for(int j=0; j<3; j++){
+            printf("\t%d", navio3Posicoes[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+*/
+
     
 
-    for (int i=0; i<9; i++){
+    /*for (int i=0; i<9; i++){
         for (int j=0; j<9; j++){
             printf(" %d", navio[i][j]);
         }
         printf("\n");
-    }   
+    }   */
     
     /*for(placar=1;placar>=0;placar--){
         //printf("\nnaviox:%d\nnavioy:%d\n",naviox[0],navioy[0]);
@@ -106,8 +171,8 @@ int main ()
 
 {
 
-   gerar();
-   print_matriz();
+   //gerar();
+   //print_matriz();
    sorteio();
 
     /*char strings [5][100];

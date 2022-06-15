@@ -55,7 +55,7 @@ void gerar(){
 
 void print_matriz(){
     system("clear");
-    printf("\n\t---------------BATALHA NAVAL------------\n\n:%d\n\n\n",placar);
+    printf("\n\t---------------BATALHA NAVAL------------\n\nplacar:%d\n\n\n",placar);
     for (x=-1;x<11;x++){
         for (y=0;y<22;y++){
             printf("%c", matriz[x][y]);
@@ -66,19 +66,21 @@ void print_matriz(){
 }
 
 void sorteio(){
-int naviox[9];
-int navioy[9];
+int naviox[5];
+int navioy[5];
 int count = 1,x=0,y=0;
 
-    for (int i=0; i<9; i++){
+    for (int i=0; i<5; i++){
         naviox[i]= rand() % 9;
         naviox[i]=naviox[i];
     }
 
-    for (int i=0; i<9; i++){
+    for (int i=0; i<5; i++){
         navioy[i]= rand() % 9;
         navioy[i]=navioy[i];
     }
+
+    
 
     /*for (int i=0; i<9; i++){
         printf("x:%d\n", naviox[i]);
@@ -93,7 +95,7 @@ int count = 1,x=0,y=0;
                 printf("naviox: %d navioy: %d\nescolha: x->%d y->%d\n", naviox[i],navioy[i], x, y);
                 x=x+1;
                 y=y*2+2;
-                matriz[x][y]='o';
+                matriz[x][y]='x';
                 }
                 
         }
