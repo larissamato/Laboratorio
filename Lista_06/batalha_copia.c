@@ -9,10 +9,10 @@ int placar=25, pontos=0;
 
 void tela_inicial(){
     system("clear");
-    printf("\n\t---------------BATALHA NAVAL------------\n\n");printf("____________________PPP \n_____________________P \n_____________________PPPPPPPPPPPPP \n_____________________PPP___P__P_PPPP\n_____________________PPP___PPPP___PP\n_____________________PPP__PPPPP___PP\n_____________________PPP__PPPPP___P\n_____________________PPPPPP__PP___P\n_____________________P_________PPPP\n_____________PPPPPPPPPPPPP\n_____________PP___________PP\n______________P____________P\n______________P_____________P\n_______________P____________P\n_______________P____________P_PP\n_______________P__PPPPPPPPPPPPPPP\n_____PPPPPPPPPPPPPP______________P\n_____P____________PP_____________PP____P\n_____PP____________P_____PPPPPPPPPPPPPPPP\n______P______PPPPPPPPPPPPPP______________P\n______PP_____PP___________P______________PP\n_______P______P____________P______________P\n_______P______PP___________P_____________PP\n_______P_______P___________P_____________PP\n______PP_______P___________PP____________P\n______PPPPPPPPPPP__________PP___________PP\n___________P_P_PP________PPP_____PPPPPPPP_____PPP\n___________P_P_PPPPPPPPPPP_PPPPPPP_______PPPPP__PP\nPPPPPP_____P_P______PP_P_______P_PPPPPPPPP___PPPPP\nPP___PPPPPPPPP______PP_P____PPPPPPP________PP\n__PP________PPPPPPPPPPPPPPPPPP____PP______P\n____P____________________________PP_P____P\n_____P_____PPP_____PP_____PPP_____PPP___PP\n______P___PP_PP___PP_P____P_PP__________P\n______PP____PP_____PPP_____PP__________PP\n_______PP_____________________________PP\n________PP___________________________PP\n_________PP________________________PPP\n___________PPPPPPPPPPPPPPPPPPPPPPPPP\n");
+    printf("\n\to_x_o_x_o_x_o_x BATALHA NAVAL o_x_o_x_o_x_o_x\n\n");printf("____________________PPP \n_____________________P \n_____________________PPPPPPPPPPPPP \n_____________________PPP___P__P_PPPP\n_____________________PPP___PPPP___PP\n_____________________PPP__PPPPP___PP\n_____________________PPP__PPPPP___P\n_____________________PPPPPP__PP___P\n_____________________P_________PPPP\n_____________PPPPPPPPPPPPP\n_____________PP___________PP\n______________P____________P\n______________P_____________P\n_______________P____________P\n_______________P____________P_PP\n_______________P__PPPPPPPPPPPPPPP\n_____PPPPPPPPPPPPPP______________P\n_____P____________PP_____________PP____P\n_____PP____________P_____PPPPPPPPPPPPPPPP\n______P______PPPPPPPPPPPPPP______________P\n______PP_____PP___________P______________PP\n_______P______P____________P______________P\n_______P______PP___________P_____________PP\n_______P_______P___________P_____________PP\n______PP_______P___________PP____________P\n______PPPPPPPPPPP__________PP___________PP\n___________P_P_PP________PPP_____PPPPPPPP_____PPP\n___________P_P_PPPPPPPPPPP_PPPPPPP_______PPPPP__PP\nPPPPPP_____P_P______PP_P_______P_PPPPPPPPP___PPPPP\nPP___PPPPPPPPP______PP_P____PPPPPPP________PP\n__PP________PPPPPPPPPPPPPPPPPP____PP______P\n____P____________________________PP_P____P\n_____P_____PPP_____PP_____PPP_____PPP___PP\n______P___PP_PP___PP_P____P_PP__________P\n______PP____PP_____PPP_____PP__________PP\n_______PP_____________________________PP\n________PP___________________________PP\n_________PP________________________PPP\n___________PPPPPPPPPPPPPPPPPPPPPPPPP\n");
 }
 void contagem(){
-    printf("TIROS RESTANTES: %d\t\t ACERTOS:%d\n\n", placar, pontos);
+    printf("\tTIROS RESTANTES: %d\t\tPONTOS:%d\n\n", placar, pontos);
     if(pontos==170){
         placar=0;
         system("clear");
@@ -25,15 +25,16 @@ void contagem(){
 
 void print_matriz(){
     system("clear");
-    printf("\n\t---------------BATALHA NAVAL------------\n\n");
+    printf("\n\t---------------BATALHA NAVAL---------------\n\n");
      contagem();
-     for(int i=0; i<10; i++){
+     for(int i=-1; i<10; i++){
         for(int j=0; j<10; j++){
             printf(" %c", matriz_jogador[i][j]);
         }
-        printf("\n");
+        printf("\t\n");
     }
     printf("\n");
+    
 }
 void sorteio(){
     int navio1Posicoes[5];
@@ -97,7 +98,7 @@ void jogador(){
             
         }
     }
-    for(placar=25;placar>=0;placar--){
+    for(placar=24;placar>=0;placar--){
     printf("\nDigite um valor de 0 a 99:");
     scanf("%d",&number);
 
@@ -119,7 +120,7 @@ void jogador(){
 
 int main ()
 
-{  
+{   
     tela_inicial();
     sorteio();
     jogador();
