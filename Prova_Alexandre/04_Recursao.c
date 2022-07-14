@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
+#include <stdlib.h>
+//#include <conio.h>
 
 //Imprime uma string invertida
 void contrario(char s[])
@@ -39,12 +40,17 @@ int main(void)
     int t;
     printf("Imprime reverso\n\n");
     printf("\nDigite a string:  ");
-    gets(s);
+    scanf("%s",s);
     contrario(s);
-    getch();
+    getchar();
 
-    printf("\nFatorial de 30: %d ", fatorial(3));
+    printf("\nFatorial de 30: %ld ", fatorial(3));
     //fatorial(3) = 3x2x1 = 6
 
     printf("\nO tamanho da string s:'%s' e: %d",s,tamstring(s));
 }
+
+
+
+
+
